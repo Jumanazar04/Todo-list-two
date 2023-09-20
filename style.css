@@ -1,0 +1,84 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: rgb(199, 199, 202);
+}
+
+.text {
+    margin: 70px auto 20px auto;
+    max-width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin:  0 auto;
+}
+
+input {
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid;
+    
+}
+
+form, .text, .tasks {
+    border-radius: 5px;
+}
+
+.pencil, .xmark {
+    width: 20px;
+    height: 20px;
+}
+
+.tasks {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .8;
+}
